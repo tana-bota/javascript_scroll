@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+}
+
+h1 {
+    margin: 50vh 0;
+    position: relative;
+}
+
+
+h1::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 50px;
+    left: calc(50% - 20px);
+    border: transparent solid 20px;
+    border-top: black solid 10px;
+}
+
+img {
+    max-width: 100%;
+    margin: 20vh 0;
+}
